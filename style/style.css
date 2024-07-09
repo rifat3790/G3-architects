@@ -13,6 +13,9 @@
     cursor: pointer;
     border: 0;
 }
+.text-gray{
+    color: #727272;
+}
 
 /* header style */
 header{
@@ -63,10 +66,6 @@ nav li a{
     color: #131313;
 }
 
-.banner-description{
-    color: #727272;
-}
-
 .banner img{
     margin-top: 20px;
     width: 100%;
@@ -113,9 +112,7 @@ main{
     font-weight: 700;
 }
 
-.teams-description{
-    color: #727272;
-}
+
 
 /* responsive style */
 @media screen and (max-width: 576px) {
@@ -125,6 +122,14 @@ main{
 
     nav{
         flex-direction: column;
+    }
+
+    .teams-container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .teams-image-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
